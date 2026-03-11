@@ -1,0 +1,18 @@
+{
+ "Version": "2008-10-17",
+ "Statement": [
+   {
+     "Sid": "AllowPushPullFromDevOpsRole",
+     "Effect": "Allow",
+     "Principal": {
+       "AWS": "arn:aws:iam::718383533665:role/DevOpsRole"
+     },
+     "Action": [
+       "ecr:GetDownloadUrlForLayer",
+       "ecr:BatchGetImage",
+       "ecr:BatchCheckLayerAvailability",
+       "ecr:PutImage"
+     ]
+   }
+ ]
+}
