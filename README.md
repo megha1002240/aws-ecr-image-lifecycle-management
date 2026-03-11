@@ -273,18 +273,7 @@ AccessDeniedException
 ```
 
 This confirms that **only authorized roles can push or pull images**.
-
----
-
-## Project Deliverables
-
-* Repository Policy JSON
-* Lifecycle Policy JSON
-* Screenshots of image cleanup
-* Unauthorized access demonstration
-* Project documentation (README)
-
----
+<img width="1905" height="309" alt="Screenshot 2026-03-11 152220" src="https://github.com/user-attachments/assets/ce751ae3-be2a-4d73-982d-69ee60e4f9b4" />
 
 ## Conclusion
 
