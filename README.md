@@ -54,6 +54,11 @@ sudo apt install docker.io -y
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
+<img width="940" height="152" alt="image" src="https://github.com/user-attachments/assets/dc6b290b-1788-4248-8d5f-d11b660ee3de" />
+<img width="840" height="86" alt="image" src="https://github.com/user-attachments/assets/1edc25b1-98f3-4df3-b903-45ced4dd4616" />
+<img width="715" height="70" alt="image" src="https://github.com/user-attachments/assets/80aed0c0-ce38-4411-8fe5-7d89b6b5e1d7" />
+
+
 
 Install AWS CLI:
 
@@ -63,6 +68,7 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 ```
+<img width="1920" height="1008" alt="Screenshot 2026-03-09 141139" src="https://github.com/user-attachments/assets/07b42a8c-b055-4934-9ced-765bc4754d85" />
 
 ---
 
@@ -78,6 +84,7 @@ Provide:
 * Secret Key
 * Region
 * Output format
+<img width="1920" height="1008" alt="Screenshot 2026-03-09 141139" src="https://github.com/user-attachments/assets/aa3ecab4-1e89-4d94-8514-cf159321e88a" />
 
 ---
 
@@ -92,6 +99,7 @@ Repository Name:
 ```
 secure-app
 ```
+<img width="1920" height="1008" alt="Screenshot 2026-03-09 140945" src="https://github.com/user-attachments/assets/fdd937c8-2150-46c3-88ec-64d7ac19a130" />
 
 Repository URI example:
 
@@ -125,6 +133,7 @@ CMD ["python","app.py"]
 ```
 docker build -t secure-app:v1 .
 ```
+<img width="1470" height="681" alt="image" src="https://github.com/user-attachments/assets/22f592a1-d2cf-4061-9d0d-bd8841d762fb" />
 
 ---
 
@@ -135,6 +144,7 @@ aws ecr get-login-password --region eu-north-1 \
 | docker login --username AWS \
 --password-stdin 718383533665.dkr.ecr.eu-north-1.amazonaws.com
 ```
+<img width="1912" height="153" alt="image" src="https://github.com/user-attachments/assets/8797bdc9-c2a1-44bd-a594-7b034d92dfcb" />
 
 ---
 
@@ -153,6 +163,7 @@ docker tag secure-app:v1 \
 docker push \
 718383533665.dkr.ecr.eu-north-1.amazonaws.com/secure-app:v1
 ```
+<img width="1629" height="100" alt="image" src="https://github.com/user-attachments/assets/8b79559d-794f-444f-a626-414579c99b4f" />
 
 Multiple versions were pushed:
 
@@ -163,12 +174,16 @@ v3
 v4
 v5
 ```
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/73237178-448b-471b-af63-a7de82900086" />
 
 ---
 
 ## Step 9: Lifecycle Policy
 
 A lifecycle policy was configured to retain only the **latest 3 images**.
+<img width="1920" height="1008" alt="Screenshot 2026-03-09 144927" src="https://github.com/user-attachments/assets/782fdc88-ec89-4713-8157-1be192e39297" />
+<img width="1920" height="1008" alt="Screenshot 2026-03-09 144949" src="https://github.com/user-attachments/assets/bd03742e-c81f-439e-93cc-41875c74b6b9" />
+
 
 Example lifecycle policy:
 
@@ -190,6 +205,7 @@ Example lifecycle policy:
  ]
 }
 ```
+<img width="1920" height="1008" alt="Screenshot 2026-03-09 145103" src="https://github.com/user-attachments/assets/220cd80f-efca-483c-83a1-9ba4dce04e8f" />
 
 Result:
 
@@ -202,6 +218,7 @@ v3
 v4
 v5
 ```
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/ab760bc0-9a04-484e-a8e2-88667d0dbb6d" />
 
 After Cleanup
 
@@ -210,6 +227,7 @@ v3
 v4
 v5
 ```
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/d766fce1-fa7c-455a-9edb-80dba5b526b2" />
 
 Older images are automatically deleted.
 
