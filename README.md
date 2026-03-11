@@ -268,7 +268,8 @@ An unauthorized IAM user attempted to push an image to the repository.
 1. Make a IAM User
 <img width="1920" height="1008" alt="Screenshot 2026-03-11 152026" src="https://github.com/user-attachments/assets/953b9be0-70df-49cc-9cbd-f8d7aa559d4a" />
 2. Create a access key
-<img width="1920" height="1008" alt="Screenshot 2026-03-11 152026" src="https://github.com/user-attachments/assets/9f229745-bbd7-4540-8e1b-39be3c2aff63" />
+<img width="1920" height="1008" alt="Screenshot 2026-03-11 152026" src="https://github.com/user-attachments/assets/4f30a935-dff4-46b5-8a22-01e90c5b3591" />
+
 3. Pass the access key
 Result:
 
